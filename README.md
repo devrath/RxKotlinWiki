@@ -1,8 +1,19 @@
 <h1 align="center">𝚁𝚡𝙺𝚘𝚝𝚕𝚒𝚗𝚆𝚒𝚔𝚒</h1>
 
-![1_GZmhCFMCrG4L_mOtwSb0zA](https://github.com/devrath/DroidCamera/assets/1456191/98fce058-3c1a-430a-b4c7-699262b96e8c)
+![RxKotlin](https://github.com/devrath/RxKotlinWiki/assets/1456191/bce9bb3f-42fb-44cc-9566-3bee1e534a41)
 
+<p align="center">
+<a><img src="https://img.shields.io/badge/Built%20Using-Kotlin-silver?style=for-the-badge&logo=kotlin"></a>
+<a><img src="https://img.shields.io/badge/Built%20By-Android%20Studio-red?style=for-the-badge&logo=android%20studio"></a>  
+<a><img src="https://img.shields.io/badge/Tool-RxJava-black?style=for-the-badge&logo=elixir"></a>  
+<a><img src="https://img.shields.io/badge/Tool-RxAndroid-pink?style=for-the-badge&logo=elixir"></a>  
+<a><img src="https://img.shields.io/badge/Tool-RxKotlin-purple?style=for-the-badge&logo=elixir"></a>  
+</p>
+
+<div align="center">
 🧤 𝚃𝚑𝚒𝚜 𝚙𝚛𝚘𝚓𝚎𝚌𝚝 𝚍𝚎𝚖𝚘𝚗𝚜𝚝𝚛𝚊𝚝𝚎𝚜 𝚝𝚑𝚎 𝚞𝚜𝚎 𝚘𝚏 𝚁𝚎𝚊𝚌𝚝𝚒𝚟𝚎𝚇 𝚠𝚒𝚝𝚑 𝙰𝚗𝚍𝚛𝚘𝚒𝚍 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚖𝚎𝚗𝚝
+</div>
+
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
 𝙸𝚏 𝚢𝚘𝚞 𝚏𝚎𝚎𝚕 𝚕𝚒𝚔𝚎 𝚜𝚞𝚙𝚙𝚘𝚛𝚝 𝚖𝚎 𝚊 𝚌𝚘𝚏𝚏𝚎𝚎 𝚏𝚘𝚛 𝚖𝚢 𝚎𝚏𝚏𝚘𝚛𝚝𝚜, 𝙸 𝚠𝚘𝚞𝚕𝚍 𝚐𝚛𝚎𝚊𝚝𝚕𝚢 𝚊𝚙𝚙𝚛𝚎𝚌𝚒𝚊𝚝𝚎 𝚒𝚝.</br>
