@@ -6,5 +6,5 @@ sealed class ModuleDemo(val rout: String) {
     data object CreatingObservableDemo : ModuleDemo("CreatingObservableDemo")
     data object ObservingObservableDemo : ModuleDemo("ObservingObservableDemo")
     data object CancellingObservableDemo : ModuleDemo("CancellingObservableDemo")
-    data object CreateObservableDemo : ModuleDemo("CreateObservableDemo")
+    data object ContextSpecificObservableDemo : ModuleDemo("ContextSpecificObservableDemo")
 }

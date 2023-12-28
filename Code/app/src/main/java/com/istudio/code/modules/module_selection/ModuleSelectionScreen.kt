@@ -41,8 +41,8 @@ fun ModuleSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Create Observable", onClick = {
-            navController.navigate(ModuleDemo.CreateObservableDemo.rout)
+        AppButton(text = "Context Specific Observable", onClick = {
+            navController.navigate(ModuleDemo.ContextSpecificObservableDemo.rout)
         })
 
     }
