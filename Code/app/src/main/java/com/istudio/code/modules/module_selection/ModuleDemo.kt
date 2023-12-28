@@ -11,4 +11,5 @@ sealed class ModuleDemo(val rout: String) {
     data object DoOperatorDemo : ModuleDemo("DoOperatorDemo")
     data object SubjectsDemo : ModuleDemo("SubjectsDemo")
     data object PublishSubjectDemo : ModuleDemo("PublishSubjectDemo")
+    data object BehaviourSubjectDemo : ModuleDemo("BehaviourSubjectDemo")
 }

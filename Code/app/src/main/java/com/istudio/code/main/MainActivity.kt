@@ -17,6 +17,7 @@ import com.istudio.code.modules.module_demos.creating_observable.CreatingObserva
 import com.istudio.code.modules.module_demos.operators.OperatorsDemo
 import com.istudio.code.modules.module_demos.operators.do_operator.DoOperatorDemo
 import com.istudio.code.modules.module_demos.operators.create_operators.subjects.SubjectsDemo
+import com.istudio.code.modules.module_demos.operators.create_operators.subjects.behaviour_subject.BehaviourSubjectDemo
 import com.istudio.code.modules.module_demos.operators.create_operators.subjects.publish_subject.PublishSubjectDemo
 import com.istudio.code.modules.module_selection.ModuleDemo
 import com.istudio.code.modules.module_selection.ModuleSelectionScreen
@@ -74,6 +75,10 @@ class MainActivity : ComponentActivity() {
                         // Publish Subject demo
                         composable(ModuleDemo.PublishSubjectDemo.rout) {
                             PublishSubjectDemo(navController = navController)
+                        }
+                        // Behaviour Subject demo
+                        composable(ModuleDemo.BehaviourSubjectDemo.rout) {
+                            BehaviourSubjectDemo(navController = navController)
                         }
                     }
                 }
