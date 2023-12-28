@@ -81,4 +81,11 @@ dependencies {
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
     // Navigation
     implementation ("androidx.navigation:navigation-compose:2.7.5")
+
+    // Rx
+    implementation ("io.reactivex.rxjava3:rxjava:3.0.3")
+    implementation ("io.reactivex.rxjava3:rxandroid:3.0.0")
+    implementation ("io.reactivex.rxjava3:rxkotlin:3.0.0")
+    implementation ("com.jakewharton.rxrelay3:rxrelay:3.0.0")
+    implementation ("androidx.lifecycle:lifecycle-extensions:2.2.0")
 }
