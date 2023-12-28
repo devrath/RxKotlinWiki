@@ -1,4 +1,4 @@
-package com.istudio.code.modules.module_demos.creating_observable
+package com.istudio.code.modules.module_demos.observing_observable
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,9 +15,9 @@ import androidx.navigation.NavController
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
-fun CreatingObservableDemo(navController : NavController) {
+fun ObservingObservableDemo(navController: NavController) {
 
-    val viewModel : CreatingObservableDemoVm = hiltViewModel()
+    val viewModel : ObservingObservableDemoVm = hiltViewModel()
 
     Column(
         modifier = Modifier.fillMaxSize().padding(10.dp),
@@ -27,26 +27,8 @@ fun CreatingObservableDemo(navController : NavController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "One Emisssion", onClick = {
-            viewModel.oneEmission()
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Group of Emissions", onClick = {
-            viewModel.groupOfEmissions()
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "List of Emissions", onClick = {
-            viewModel.listOfEmissions()
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Convert list to Observable", onClick = {
-            viewModel.listToObservable()
+        AppButton(text = "Observing", onClick = {
+            //viewModel.oneEmission()
         })
 
     }

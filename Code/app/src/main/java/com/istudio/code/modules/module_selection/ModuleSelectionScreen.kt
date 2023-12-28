@@ -23,8 +23,14 @@ fun ModuleSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Kotlin Basics", onClick = {
+        AppButton(text = "Creating Observable", onClick = {
             navController.navigate(ModuleDemo.CreatingObservableDemo.rout)
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Observing Observable", onClick = {
+            navController.navigate(ModuleDemo.ObservingObservableDemo.rout)
         })
 
     }

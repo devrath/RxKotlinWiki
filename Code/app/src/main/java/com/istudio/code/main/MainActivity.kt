@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.istudio.code.modules.module_demos.creating_observable.CreatingObservableDemo
+import com.istudio.code.modules.module_demos.observing_observable.ObservingObservableDemo
 import com.istudio.code.modules.module_selection.ModuleDemo
 import com.istudio.code.modules.module_selection.ModuleSelectionScreen
 import com.istudio.code.ui.theme.CodeTheme
@@ -44,6 +45,10 @@ class MainActivity : ComponentActivity() {
                         // Creating a observable
                         composable(ModuleDemo.CreatingObservableDemo.rout) {
                             CreatingObservableDemo(navController = navController)
+                        }
+                        // Observing a observable
+                        composable(ModuleDemo.ObservingObservableDemo.rout) {
+                            ObservingObservableDemo(navController = navController)
                         }
                     }
                 }
