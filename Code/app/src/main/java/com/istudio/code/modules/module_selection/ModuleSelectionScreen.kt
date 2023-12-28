@@ -45,5 +45,9 @@ fun ModuleSelectionScreen(navController: NavHostController) {
             navController.navigate(ModuleDemo.OperatorsDemo.rout)
         })
 
+        AppButton(text = "Subjects", onClick = {
+            navController.navigate(ModuleDemo.SubjectsDemo.rout)
+        })
+
     }
 }
