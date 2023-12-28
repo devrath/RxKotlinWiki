@@ -1,4 +1,4 @@
-package com.istudio.code.modules.module_demos.observing_observable
+package com.istudio.code.modules.module_demos.cancelling_observable
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,9 +15,9 @@ import androidx.navigation.NavController
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
-fun ObservingObservableDemo(navController: NavController) {
+fun CancellingObservableDemo(navController: NavController) {
 
-    val viewModel : ObservingObservableDemoVm = hiltViewModel()
+    val viewModel : CancellingObservableDemoVm = hiltViewModel()
 
     Column(
         modifier = Modifier.fillMaxSize().padding(10.dp),
@@ -27,28 +27,12 @@ fun ObservingObservableDemo(navController: NavController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Subscribe to observable", onClick = {
-            viewModel.subscribingToObserve()
+        AppButton(text = "Cancelling Single observable", onClick = {
+            // Subscribe
+            viewModel.cancelSingleObservableDemo()
+            // Cancel
+            viewModel.performCanceling()
         })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Subscribe using subscribeBy", onClick = {
-            viewModel.subscribeUsingSubscribeBy()
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Subscribe empty observable", onClick = {
-            viewModel.subscribeEmptyObservable()
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Observable that never completes", onClick = {
-            viewModel.observableThatNeverCompletes()
-        })
-
     }
 
 

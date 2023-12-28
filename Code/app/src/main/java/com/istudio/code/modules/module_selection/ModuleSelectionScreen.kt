@@ -29,8 +29,14 @@ fun ModuleSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Observing Observable", onClick = {
+        AppButton(text = "Subscribing Observable", onClick = {
             navController.navigate(ModuleDemo.ObservingObservableDemo.rout)
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Cancelling Observable", onClick = {
+            navController.navigate(ModuleDemo.CancellingObservableDemo.rout)
         })
 
     }
