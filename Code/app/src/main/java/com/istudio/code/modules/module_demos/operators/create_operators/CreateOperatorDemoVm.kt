@@ -1,8 +1,7 @@
-package com.istudio.code.modules.module_demos.context_specific_observables.create_observable
+package com.istudio.code.modules.module_demos.operators.create_operators
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import episodeI
 import episodeII
@@ -11,14 +10,13 @@ import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.core.Maybe
 import io.reactivex.rxjava3.core.Observable
 import io.reactivex.rxjava3.core.Single
-import io.reactivex.rxjava3.core.SingleObserver
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.kotlin.addTo
 import io.reactivex.rxjava3.kotlin.subscribeBy
 import javax.inject.Inject
 
 @HiltViewModel
-class CreateObservableDemoVm @Inject constructor(context: Application) : AndroidViewModel(context) {
+class CreateOperatorDemoVm @Inject constructor(context: Application) : AndroidViewModel(context) {
 
     /**
      * <-------------------------- CREATE OBSERVABLE -------------------------->
@@ -32,7 +30,7 @@ class CreateObservableDemoVm @Inject constructor(context: Application) : Android
         emit.onComplete()
     }
 
-    fun initiateCreateObservableDemo() {
+    fun initiateCreateOperatorDemo() {
 
         observable.subscribeBy (
             onNext = {
@@ -88,7 +86,7 @@ class CreateObservableDemoVm @Inject constructor(context: Application) : Android
         }
     }
 
-    fun initiateSingleObservableDemo() {
+    fun initiateSingleOperatorDemo() {
         singleObservable.subscribeBy (
             onSuccess = {
                 println("Result-> $it")
@@ -133,7 +131,7 @@ class CreateObservableDemoVm @Inject constructor(context: Application) : Android
         }
     }
 
-    fun initiateCompletableObservableDemo() {
+    fun initiateCompletableOperatorDemo() {
         completableObservable.subscribeBy (
             onError = {
                 println("ErrorMessage-> ${it.localizedMessage}")
@@ -180,7 +178,7 @@ class CreateObservableDemoVm @Inject constructor(context: Application) : Android
         }
     }
 
-    fun initiateMaybeObservableDemo() {
+    fun initiateMaybeOperatorDemo() {
         maybeObservable.subscribeBy (
             onSuccess = {
                 println("Result-> $it")

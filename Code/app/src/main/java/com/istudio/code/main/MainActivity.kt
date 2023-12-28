@@ -12,7 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.istudio.code.modules.module_demos.cancelling_observable.CancellingObservableDemo
-import com.istudio.code.modules.module_demos.context_specific_observables.create_observable.CreateObservableDemo
+import com.istudio.code.modules.module_demos.operators.create_operators.CreateObservableDemo
 import com.istudio.code.modules.module_demos.creating_observable.CreatingObservableDemo
 import com.istudio.code.modules.module_selection.ModuleDemo
 import com.istudio.code.modules.module_selection.ModuleSelectionScreen
