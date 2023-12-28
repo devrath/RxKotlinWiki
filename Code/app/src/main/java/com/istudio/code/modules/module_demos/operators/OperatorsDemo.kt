@@ -33,6 +33,13 @@ fun OperatorsDemo(navController: NavController){
         })
 
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Do Operator", onClick = {
+            navController.navigate(ModuleDemo.DoOperatorDemo.rout)
+        })
+
+
     }
 
 

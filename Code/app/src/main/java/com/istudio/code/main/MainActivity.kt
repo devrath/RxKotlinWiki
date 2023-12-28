@@ -15,6 +15,7 @@ import com.istudio.code.modules.module_demos.cancelling_observable.CancellingObs
 import com.istudio.code.modules.module_demos.operators.create_operators.CreateObservableDemo
 import com.istudio.code.modules.module_demos.creating_observable.CreatingObservableDemo
 import com.istudio.code.modules.module_demos.operators.OperatorsDemo
+import com.istudio.code.modules.module_demos.operators.do_operator.DoOperatorDemo
 import com.istudio.code.modules.module_selection.ModuleDemo
 import com.istudio.code.modules.module_selection.ModuleSelectionScreen
 import com.istudio.code.ui.theme.CodeTheme
@@ -59,6 +60,10 @@ class MainActivity : ComponentActivity() {
                         // Create Observable Demo
                         composable(ModuleDemo.CreateOperatorDemo.rout) {
                             CreateObservableDemo(navController = navController)
+                        }
+                        // Do Operator Demo
+                        composable(ModuleDemo.DoOperatorDemo.rout) {
+                            DoOperatorDemo(navController = navController)
                         }
                     }
                 }

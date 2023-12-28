@@ -1,4 +1,4 @@
-package com.istudio.code.modules.module_demos.operators.create_operators
+package com.istudio.code.modules.module_demos.operators.do_operator
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,13 +12,14 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import com.istudio.code.modules.module_demos.operators.create_operators.CreateOperatorDemoVm
 import com.istudio.code.ui.composables.AppButton
 import com.istudio.code.ui.composables.AppText
 
 @Composable
-fun CreateObservableDemo(navController: NavController){
+fun DoOperatorDemo(navController: NavController){
 
-    val viewModel : CreateOperatorDemoVm = hiltViewModel()
+    val viewModel : DoOperatorDemoVm = hiltViewModel()
 
     Column(
         modifier = Modifier
@@ -30,27 +31,10 @@ fun CreateObservableDemo(navController: NavController){
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Create Operator", onClick = {
-            viewModel.initiateCreateOperatorDemo()
+        AppButton(text = "Demo", onClick = {
+            //viewModel.initiateCreateOperatorDemo()
         })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Single Operator", onClick = {
-            viewModel.initiateSingleOperatorDemo()
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Completable Operator", onClick = {
-            viewModel.initiateCompletableOperatorDemo()
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Maybe Operator", onClick = {
-            viewModel.initiateMaybeOperatorDemo()
-        })
-
     }
+
+
 }
