@@ -1,4 +1,4 @@
-package com.istudio.code.modules.module_demos.subjects
+package com.istudio.code.modules.module_demos.operators.create_operators.subjects
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

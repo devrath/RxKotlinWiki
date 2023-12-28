@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
+import com.istudio.code.modules.module_selection.ModuleDemo
 import com.istudio.code.ui.composables.AppButton
 import com.istudio.code.ui.composables.AppText
 
@@ -50,6 +51,12 @@ fun CreateObservableDemo(navController: NavController){
 
         AppButton(text = "Maybe Operator", onClick = {
             viewModel.initiateMaybeOperatorDemo()
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Subjects", onClick = {
+            navController.navigate(ModuleDemo.SubjectsDemo.rout)
         })
 
     }

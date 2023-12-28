@@ -1,4 +1,4 @@
-package com.istudio.code.modules.module_demos.subjects
+package com.istudio.code.modules.module_demos.operators.create_operators.subjects
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -31,8 +31,8 @@ fun SubjectsDemo(navController: NavController){
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Demo", onClick = {
-            navController.navigate(ModuleDemo.CreateOperatorDemo.rout)
+        AppButton(text = "Publish Subject", onClick = {
+            navController.navigate(ModuleDemo.PublishSubjectDemo.rout)
         })
 
     }
