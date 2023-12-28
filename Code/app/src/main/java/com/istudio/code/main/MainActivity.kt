@@ -12,6 +12,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.istudio.code.modules.module_demos.cancelling_observable.CancellingObservableDemo
+import com.istudio.code.modules.module_demos.create_observable.CreateObservableDemo
 import com.istudio.code.modules.module_demos.creating_observable.CreatingObservableDemo
 import com.istudio.code.modules.module_demos.observing_observable.ObservingObservableDemo
 import com.istudio.code.modules.module_selection.ModuleDemo
@@ -50,6 +51,10 @@ class MainActivity : ComponentActivity() {
                         // Cancelling a observable
                         composable(ModuleDemo.CancellingObservableDemo.rout) {
                             CancellingObservableDemo(navController = navController)
+                        }
+                        // Create Observable Demo
+                        composable(ModuleDemo.CreateObservableDemo.rout) {
+                            CreateObservableDemo(navController = navController)
                         }
                     }
                 }
