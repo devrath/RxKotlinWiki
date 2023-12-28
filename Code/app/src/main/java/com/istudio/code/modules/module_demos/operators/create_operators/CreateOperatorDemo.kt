@@ -32,25 +32,25 @@ fun CreateObservableDemo(navController: NavController){
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Create Operator Demo", onClick = {
+        AppButton(text = "Create Operator", onClick = {
             viewModel.initiateCreateOperatorDemo()
         })
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Single Operator Demo", onClick = {
+        AppButton(text = "Single Operator", onClick = {
             viewModel.initiateSingleOperatorDemo()
         })
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Completable Operator Demo", onClick = {
+        AppButton(text = "Completable Operator", onClick = {
             viewModel.initiateCompletableOperatorDemo()
         })
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Maybe Operator Demo", onClick = {
+        AppButton(text = "Maybe Operator", onClick = {
             viewModel.initiateMaybeOperatorDemo()
         })
 

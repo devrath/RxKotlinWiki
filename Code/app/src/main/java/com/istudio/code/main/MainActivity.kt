@@ -52,7 +52,7 @@ class MainActivity : ComponentActivity() {
                             CancellingObservableDemo(navController = navController)
                         }
                         // Create Observable Demo
-                        composable(ModuleDemo.ContextSpecificObservableDemo.rout) {
+                        composable(ModuleDemo.CreateOperatorDemo.rout) {
                             CreateObservableDemo(navController = navController)
                         }
                     }
