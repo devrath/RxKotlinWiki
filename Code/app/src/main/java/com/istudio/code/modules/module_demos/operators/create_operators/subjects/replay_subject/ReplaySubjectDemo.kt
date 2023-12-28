@@ -1,4 +1,4 @@
-package com.istudio.code.modules.module_demos.operators.create_operators.subjects
+package com.istudio.code.modules.module_demos.operators.create_operators.subjects.replay_subject
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -12,13 +12,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.istudio.code.modules.module_selection.ModuleDemo
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
-fun SubjectsDemo(navController: NavController){
+fun ReplaySubjectDemo(navController: NavController){
 
-    val viewModel : SubjectsDemoVm = hiltViewModel()
+    val viewModel : ReplaySubjectDemoVm = hiltViewModel()
 
     Column(
         modifier = Modifier
@@ -31,20 +30,8 @@ fun SubjectsDemo(navController: NavController){
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Publish Subject", onClick = {
-            navController.navigate(ModuleDemo.PublishSubjectDemo.rout)
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Behaviour Subject", onClick = {
-            navController.navigate(ModuleDemo.BehaviourSubjectDemo.rout)
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Replay Subject", onClick = {
-            navController.navigate(ModuleDemo.ReplaySubjectDemo.rout)
+        AppButton(text = "Replay Subject Demo", onClick = {
+            viewModel.demo()
         })
 
     }
