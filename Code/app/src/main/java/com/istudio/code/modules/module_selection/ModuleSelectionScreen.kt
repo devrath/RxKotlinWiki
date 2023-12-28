@@ -41,8 +41,8 @@ fun ModuleSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Create operator", onClick = {
-            navController.navigate(ModuleDemo.CreateOperatorDemo.rout)
+        AppButton(text = "Operators", onClick = {
+            navController.navigate(ModuleDemo.OperatorsDemo.rout)
         })
 
     }
