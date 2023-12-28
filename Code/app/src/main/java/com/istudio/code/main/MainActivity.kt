@@ -11,6 +11,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.istudio.code.modules.module_demos.creating_observable.CreatingObservableDemo
 import com.istudio.code.modules.module_selection.ModuleDemo
 import com.istudio.code.modules.module_selection.ModuleSelectionScreen
 import com.istudio.code.ui.theme.CodeTheme
@@ -40,10 +41,10 @@ class MainActivity : ComponentActivity() {
                         composable(ModuleDemo.DemoSelection.rout) {
                             ModuleSelectionScreen(navController = navController)
                         }
-                        // Kotlin basics Screen
-                        /*composable(ModuleDemo.KotlinBasicsDemo.rout) {
-                            KotlinBasicsDemo(navController = navController)
-                        }*/
+                        // Creating a observable
+                        composable(ModuleDemo.CreatingObservableDemo.rout) {
+                            CreatingObservableDemo(navController = navController)
+                        }
                     }
                 }
             }

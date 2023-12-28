@@ -1,4 +1,4 @@
-package com.istudio.code.modules.module_selection
+package com.istudio.code.modules.module_demos.creating_observable
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -10,11 +10,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.navigation.NavHostController
+import androidx.hilt.navigation.compose.hiltViewModel
+import androidx.navigation.NavController
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
-fun ModuleSelectionScreen(navController: NavHostController) {
+fun CreatingObservableDemo(navController : NavController) {
+
+    val viewModel : CreatingObservableDemoVm = hiltViewModel()
+
     Column(
         modifier = Modifier.fillMaxSize().padding(10.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
@@ -23,9 +27,23 @@ fun ModuleSelectionScreen(navController: NavHostController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Kotlin Basics", onClick = {
-            navController.navigate(ModuleDemo.CreatingObservableDemo.rout)
+        AppButton(text = "Group of Emissions", onClick = {
+            viewModel.groupOfEmissions()
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "List of Emissions", onClick = {
+            viewModel.listOfEmissions()
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Convert list to Observable", onClick = {
+            viewModel.listToObservable()
         })
 
     }
+
+
 }
