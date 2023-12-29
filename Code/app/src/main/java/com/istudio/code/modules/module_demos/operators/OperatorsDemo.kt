@@ -45,6 +45,13 @@ fun OperatorsDemo(navController: NavController){
             navController.navigate(ModuleDemo.FilterOperatorDemo.rout)
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Transforming Operators", onClick = {
+            navController.navigate(ModuleDemo.TransformingOperatorDemo.rout)
+        })
+
+
 
     }
 
