@@ -20,6 +20,7 @@ import com.istudio.code.modules.module_demos.operators.create_operators.subjects
 import com.istudio.code.modules.module_demos.operators.create_operators.subjects.behaviour_subject.BehaviourSubjectDemo
 import com.istudio.code.modules.module_demos.operators.create_operators.subjects.publish_subject.PublishSubjectDemo
 import com.istudio.code.modules.module_demos.operators.create_operators.subjects.replay_subject.ReplaySubjectDemo
+import com.istudio.code.modules.module_demos.operators.filter_operators.FilterOperatorDemo
 import com.istudio.code.modules.module_selection.ModuleDemo
 import com.istudio.code.modules.module_selection.ModuleSelectionScreen
 import com.istudio.code.ui.theme.CodeTheme
@@ -84,6 +85,10 @@ class MainActivity : ComponentActivity() {
                         // Replay Subject Demo
                         composable(ModuleDemo.ReplaySubjectDemo.rout) {
                             ReplaySubjectDemo(navController = navController)
+                        }
+                        // Filter Operators demo
+                        composable(ModuleDemo.FilterOperatorDemo.rout) {
+                            FilterOperatorDemo(navController = navController)
                         }
                     }
                 }

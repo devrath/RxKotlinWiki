@@ -1,4 +1,4 @@
-package com.istudio.code.modules.module_demos.operators
+package com.istudio.code.modules.module_demos.operators.filter_operators
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -10,12 +10,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavController
-import com.istudio.code.modules.module_selection.ModuleDemo
 import com.istudio.code.ui.composables.AppButton
 
 @Composable
-fun OperatorsDemo(navController: NavController){
+fun FilterOperatorDemo(navController: NavController){
+
+    val viewModel : FilterOperatorDemoVm = hiltViewModel()
 
     Column(
         modifier = Modifier
@@ -25,28 +27,10 @@ fun OperatorsDemo(navController: NavController){
         verticalArrangement = Arrangement.Center,
     ) {
 
-
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Create Operator", onClick = {
-            navController.navigate(ModuleDemo.CreateOperatorDemo.rout)
+        AppButton(text = "Demo", onClick = {
+            //viewModel.initiateCreateOperatorDemo()
         })
-
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Do Operator", onClick = {
-            navController.navigate(ModuleDemo.DoOperatorDemo.rout)
-        })
-
-        Spacer(modifier = Modifier.height(16.dp))
-
-        AppButton(text = "Filter Operators", onClick = {
-            navController.navigate(ModuleDemo.FilterOperatorDemo.rout)
-        })
-
-
     }
-
-
 }
