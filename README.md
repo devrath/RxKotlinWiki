@@ -15,6 +15,78 @@
 </div>
 
 
+Certainly! Here's the content organized in a table format for your GitHub README:
+
+```markdown
+# RxKotlinWiki
+
+## Fundamentals
+
+### Basic handling of observables
+
+| Topic                                  | Link                                                   |
+|----------------------------------------|--------------------------------------------------------|
+| Creating a observable using operator   | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Creating-a-observable-using-a-operator) |
+| Create Simple observable               | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Create-Simple-observable) |
+| Subscribing to an observable            | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subscribing-to-a-observable) |
+| Cancelling a observable                | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Cancelling-a-observable) |
+
+### Operators
+
+#### Side effects using Do‐Operator
+
+| Topic             | Link                                                  |
+|-------------------|-------------------------------------------------------|
+| Do‐Operator       | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Side-effects-using-Do%E2%80%90Operator) |
+
+#### Create Operators
+
+| Topic               | Link                                                 |
+|---------------------|------------------------------------------------------|
+| Create Operator     | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Create-Operator) |
+| Single Operator     | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Single-Operator) |
+| Completable Operator| [Link](https://github.com/devrath/RxKotlinWiki/wiki/Completable-Operator) |
+| Maybe Operator       | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Maybe-Operator) |
+
+#### Subjects
+
+| Topic                          | Link                                                 |
+|--------------------------------|------------------------------------------------------|
+| Subjects ‐ What are they      | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-What-are-they) |
+| Difference between Subject and Observable | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Difference-between-Subject-and-Observable) |
+| Publish Subject                 | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-Publish-Subject) |
+| Behaviour Subject               | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-Behaviour-Subject) |
+| Replay Subject                  | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-Replay-Subject) |
+
+#### Filter Operators
+
+| Topic                  | Link                                               |
+|------------------------|----------------------------------------------------|
+| Ignore Elements        | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-Ignore-Elements) |
+| Element At             | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-Element-At) |
+| Filter                 | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-Filter) |
+| DistinctUntilChanged   | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-DistinctUntilChanged) |
+| TakeUntil              | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-TakeUntil) |
+
+#### Transforming Operators
+
+| Topic                  | Link                                               |
+|------------------------|----------------------------------------------------|
+| Map                    | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Transformation-Operators-:-Map) |
+| FlatMap                | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Transformation-Operators-:-FlatMap) |
+
+#### Combining Operators
+
+| Topic                  | Link                                               |
+|------------------------|----------------------------------------------------|
+| Concat                 | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Concat) |
+| Merge                  | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Merge) |
+| Zip                    | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Zip) |
+```
+
+You can use this Markdown code in your GitHub README. Adjustments can be made as needed.
+
+
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
 𝙸𝚏 𝚢𝚘𝚞 𝚏𝚎𝚎𝚕 𝚕𝚒𝚔𝚎 𝚜𝚞𝚙𝚙𝚘𝚛𝚝 𝚖𝚎 𝚊 𝚌𝚘𝚏𝚏𝚎𝚎 𝚏𝚘𝚛 𝚖𝚢 𝚎𝚏𝚏𝚘𝚛𝚝𝚜, 𝙸 𝚠𝚘𝚞𝚕𝚍 𝚐𝚛𝚎𝚊𝚝𝚕𝚢 𝚊𝚙𝚙𝚛𝚎𝚌𝚒𝚊𝚝𝚎 𝚒𝚝.</br>
 <a href="https://www.buymeacoffee.com/devrath" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="𝙱𝚞𝚢 𝙼𝚎 𝙰 𝙲𝚘𝚏𝚏𝚎𝚎" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
