@@ -33,6 +33,18 @@ fun CombiningOperatorsDemo(navController: NavController){
             viewModel.concat()
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Merge", onClick = {
+            viewModel.merge()
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Zip", onClick = {
+            viewModel.zip()
+        })
+
 
     }
 
