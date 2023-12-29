@@ -131,6 +131,39 @@ class FilterOperatorDemoVm @Inject constructor(context: Application) : AndroidVi
 
     /** ****************** OPERATOR: DistinctUntilChanged ************ **/
 
+    /** ****************** OPERATOR: TakeUntil *********************** **/
+
+    // Create the observable
+    private val takeUntilSubject = PublishSubject.create<String>()
+    private val trigger = PublishSubject.create<Unit>()
+
+    private fun subscribetakeUntilDemo() {
+        takeUntilSubject.takeUntil(trigger).subscribeBy(
+            onNext = { println("Element printed:-> $it") },
+            onError = { println("Error Triggered") },
+            onComplete = { println("Complete Triggered") }
+        ).addTo(subscription)
+    }
+    fun takeUntilDemo() {
+        // Subscribe the observer to the observable
+        subscribetakeUntilDemo()
+        // Publish some elements
+        takeUntilSubject.onNext(episodeI)
+        takeUntilSubject.onNext(episodeI)
+        takeUntilSubject.onNext(episodeI)
+
+        // Pass the onNext Event to trigger
+        trigger.onNext(Unit)
+
+        takeUntilSubject.onNext(episodeII)
+        takeUntilSubject.onNext(episodeII)
+        takeUntilSubject.onNext(episodeIII)
+
+        // Indicate completion of stream
+        takeUntilSubject.onComplete()
+    }
+
+    /** ****************** OPERATOR: TakeUntil *********************** **/
 
     override fun onCleared() {
         super.onCleared()

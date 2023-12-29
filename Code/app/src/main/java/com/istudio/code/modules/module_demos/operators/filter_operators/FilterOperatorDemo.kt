@@ -50,5 +50,11 @@ fun FilterOperatorDemo(navController: NavController){
         AppButton(text = "DistinctUntilChanged", onClick = {
             viewModel.distinctUntilChangedDemo()
         })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "TakeUntil", onClick = {
+            viewModel.takeUntilDemo()
+        })
     }
 }
