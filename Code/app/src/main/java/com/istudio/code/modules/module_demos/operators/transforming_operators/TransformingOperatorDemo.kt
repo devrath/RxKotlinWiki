@@ -29,9 +29,12 @@ fun TransformingOperatorDemo(navController: NavController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        AppButton(text = "Demo", onClick = {
-            viewModel.demo()
+        AppButton(text = "Map", onClick = {
+            viewModel.demoMap()
         })
+
+
+
     }
 
 
