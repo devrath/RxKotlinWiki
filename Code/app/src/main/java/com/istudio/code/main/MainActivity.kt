@@ -15,6 +15,7 @@ import com.istudio.code.modules.module_demos.cancelling_observable.CancellingObs
 import com.istudio.code.modules.module_demos.operators.create_operators.CreateObservableDemo
 import com.istudio.code.modules.module_demos.creating_observable.CreatingObservableDemo
 import com.istudio.code.modules.module_demos.operators.OperatorsDemo
+import com.istudio.code.modules.module_demos.operators.combining_operators.CombiningOperatorsDemo
 import com.istudio.code.modules.module_demos.operators.do_operator.DoOperatorDemo
 import com.istudio.code.modules.module_demos.operators.create_operators.subjects.SubjectsDemo
 import com.istudio.code.modules.module_demos.operators.create_operators.subjects.behaviour_subject.BehaviourSubjectDemo
@@ -94,6 +95,10 @@ class MainActivity : ComponentActivity() {
                         // Transforming Operators demo
                         composable(ModuleDemo.TransformingOperatorDemo.rout) {
                             TransformingOperatorDemo(navController = navController)
+                        }
+                        // Combining Operators demo
+                        composable(ModuleDemo.CombiningOperatorsDemo.rout) {
+                            CombiningOperatorsDemo(navController = navController)
                         }
                     }
                 }

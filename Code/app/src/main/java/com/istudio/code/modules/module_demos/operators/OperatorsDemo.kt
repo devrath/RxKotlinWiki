@@ -51,7 +51,11 @@ fun OperatorsDemo(navController: NavController){
             navController.navigate(ModuleDemo.TransformingOperatorDemo.rout)
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
 
+        AppButton(text = "Combining Operators", onClick = {
+            navController.navigate(ModuleDemo.CombiningOperatorsDemo.rout)
+        })
 
     }
 
