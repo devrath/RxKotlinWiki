@@ -15,11 +15,6 @@
 </div>
 
 
-Certainly! Here's the content organized in a table format for your GitHub README:
-
-```markdown
-# RxKotlinWiki
-
 ## Fundamentals
 
 ### Basic handling of observables
@@ -83,8 +78,6 @@ Certainly! Here's the content organized in a table format for your GitHub README
 | Merge                  | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Merge) |
 | Zip                    | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Zip) |
 ```
-
-You can use this Markdown code in your GitHub README. Adjustments can be made as needed.
 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
