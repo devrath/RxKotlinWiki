@@ -32,5 +32,11 @@ fun FilterOperatorDemo(navController: NavController){
         AppButton(text = "IgnoreElements", onClick = {
             viewModel.ignoreElementsDemo()
         })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "ElementAt", onClick = {
+            viewModel.elementAtDemo()
+        })
     }
 }

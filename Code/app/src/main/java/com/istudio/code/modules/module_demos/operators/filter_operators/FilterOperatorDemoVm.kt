@@ -5,6 +5,7 @@ import androidx.lifecycle.AndroidViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import episodeI
 import episodeII
+import episodeIII
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.kotlin.addTo
 import io.reactivex.rxjava3.kotlin.subscribeBy
@@ -21,7 +22,7 @@ class FilterOperatorDemoVm @Inject constructor(context: Application) : AndroidVi
     // Create the observable
     private val ignoreElementsPublishSubject = PublishSubject.create<String>()
 
-    // Create the observable
+    // Create the observer
     private fun subscribeIgnoreElementsPublishSubject(){
         ignoreElementsPublishSubject.ignoreElements().subscribeBy(
             onError = { println("Error Triggered") },
@@ -43,9 +44,39 @@ class FilterOperatorDemoVm @Inject constructor(context: Application) : AndroidVi
     /** ****************** OPERATOR: Ignore Elements ****************** **/
 
 
+    /** ****************** OPERATOR: ElementAt ************************ **/
+
+    // Create the observable
+    private val elementAtObservable = PublishSubject.create<String>()
+
+    // Create the observer
+    private fun subscribeElementAt(){
+        elementAtObservable.elementAt(1).subscribeBy(
+            onSuccess = { println("Element printed:-> $it") },
+            onError = { println("Error Triggered") },
+            onComplete = { println("Complete Triggered") }
+        )
+    }
+
+    fun elementAtDemo() {
+        // Subscribe the observer to the observable
+        subscribeElementAt()
+        // Publish some elements
+        elementAtObservable.onNext(episodeI)
+        elementAtObservable.onNext(episodeII)
+        elementAtObservable.onNext(episodeIII)
+        // Indicate completion of stream
+        elementAtObservable.onComplete()
+    }
+
+    /** ****************** OPERATOR: ElementAt ************************ **/
+
+
+
+
+
     override fun onCleared() {
         super.onCleared()
-
     }
 
 }
