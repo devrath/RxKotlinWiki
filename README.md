@@ -15,69 +15,39 @@
 </div>
 
 
-## Fundamentals
-
-### Basic handling of observables
-
-| Topic                                  | Link                                                   |
-|----------------------------------------|--------------------------------------------------------|
-| Creating a observable using operator   | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Creating-a-observable-using-a-operator) |
-| Create Simple observable               | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Create-Simple-observable) |
-| Subscribing to an observable            | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subscribing-to-a-observable) |
-| Cancelling a observable                | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Cancelling-a-observable) |
-
-### Operators
-
-#### Side effects using Do‐Operator
-
-| Topic             | Link                                                  |
-|-------------------|-------------------------------------------------------|
-| Do‐Operator       | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Side-effects-using-Do%E2%80%90Operator) |
-
-#### Create Operators
-
-| Topic               | Link                                                 |
-|---------------------|------------------------------------------------------|
-| Create Operator     | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Create-Operator) |
-| Single Operator     | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Single-Operator) |
-| Completable Operator| [Link](https://github.com/devrath/RxKotlinWiki/wiki/Completable-Operator) |
-| Maybe Operator       | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Maybe-Operator) |
-
-#### Subjects
-
-| Topic                          | Link                                                 |
-|--------------------------------|------------------------------------------------------|
-| Subjects ‐ What are they      | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-What-are-they) |
-| Difference between Subject and Observable | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Difference-between-Subject-and-Observable) |
-| Publish Subject                 | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-Publish-Subject) |
-| Behaviour Subject               | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-Behaviour-Subject) |
-| Replay Subject                  | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-Replay-Subject) |
-
-#### Filter Operators
-
-| Topic                  | Link                                               |
-|------------------------|----------------------------------------------------|
-| Ignore Elements        | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-Ignore-Elements) |
-| Element At             | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-Element-At) |
-| Filter                 | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-Filter) |
-| DistinctUntilChanged   | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-DistinctUntilChanged) |
-| TakeUntil              | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-TakeUntil) |
-
-#### Transforming Operators
-
-| Topic                  | Link                                               |
-|------------------------|----------------------------------------------------|
-| Map                    | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Transformation-Operators-:-Map) |
-| FlatMap                | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Transformation-Operators-:-FlatMap) |
-
-#### Combining Operators
-
-| Topic                  | Link                                               |
-|------------------------|----------------------------------------------------|
-| Concat                 | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Concat) |
-| Merge                  | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Merge) |
-| Zip                    | [Link](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Zip) |
-```
+## `Fundamentals`
+* [`Exploring RxKotlin`](https://github.com/devrath/RxKotlinWiki/wiki/Exploring-RxKotlin)
+* **`Basic handling of observables`**
+  * [`Creating a observable using operator`](https://github.com/devrath/RxKotlinWiki/wiki/Creating-a-observable-using-a-operator)
+  * [`Create Simple observable`](https://github.com/devrath/RxKotlinWiki/wiki/Create-Simple-observable)
+  * [`Subscribing to an observable`](https://github.com/devrath/RxKotlinWiki/wiki/Subscribing-to-a-observable)
+  * [`Cancelling a observable`](https://github.com/devrath/RxKotlinWiki/wiki/Cancelling-a-observable)
+* **`Operators`**
+  * [`Side effects using Do‐Operator`](https://github.com/devrath/RxKotlinWiki/wiki/Side-effects-using-Do%E2%80%90Operator)
+  * **`Create Operators`**
+    * [`Create Operator`](https://github.com/devrath/RxKotlinWiki/wiki/Create-Operator)
+    * [`Single Operator`](https://github.com/devrath/RxKotlinWiki/wiki/Single-Operator)
+    * [`Completable Operator`](https://github.com/devrath/RxKotlinWiki/wiki/Completable-Operator)
+    * [`Maybe Operator`](https://github.com/devrath/RxKotlinWiki/wiki/Maybe-Operator)
+    * **`Subjects`**
+      * [`Subjects ‐ What are they`](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-What-are-they)
+      * [`Difference between Subject and Observable`](https://github.com/devrath/RxKotlinWiki/wiki/Difference-between-Subject-and-Observable)
+      * [`Publish Subject`](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-Publish-Subject)
+      * [`Behaviour Subject`](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-Behaviour-Subject)
+      * [`Replay Subject`](https://github.com/devrath/RxKotlinWiki/wiki/Subjects-%E2%80%90-Replay-Subject)
+  * **`Filter Operators`**
+    * [`Ignore Elements`](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-Ignore-Elements)
+    * [`Element At`](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-Element-At)
+    * [`Filter`](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-Filter)
+    * [`DistinctUntilChanged`](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-DistinctUntilChanged)
+    * [`TakeUntil`](https://github.com/devrath/RxKotlinWiki/wiki/Filter-Operators-:-TakeUntil)
+  * **`Transforming Operators`**
+    * [`Map`](https://github.com/devrath/RxKotlinWiki/wiki/Transformation-Operators-:-Map)
+    * [`FlatMap`](https://github.com/devrath/RxKotlinWiki/wiki/Transformation-Operators-:-FlatMap)
+  * **`Combining Operators`**
+    * [`Concat`](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Concat)
+    * [`Merge`](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Merge)
+    * [`Zip`](https://github.com/devrath/RxKotlinWiki/wiki/Combining-Operators-:-Zip)
 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
