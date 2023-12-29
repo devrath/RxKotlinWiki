@@ -33,6 +33,12 @@ fun TransformingOperatorDemo(navController: NavController) {
             viewModel.demoMap()
         })
 
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "FlatMap", onClick = {
+            viewModel.demoFlatMap()
+        })
+
 
 
     }
