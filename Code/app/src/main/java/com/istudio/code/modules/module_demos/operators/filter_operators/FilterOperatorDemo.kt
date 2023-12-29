@@ -38,5 +38,17 @@ fun FilterOperatorDemo(navController: NavController){
         AppButton(text = "ElementAt", onClick = {
             viewModel.elementAtDemo()
         })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "Filter", onClick = {
+            viewModel.filterDemo()
+        })
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+        AppButton(text = "DistinctUntilChanged", onClick = {
+            viewModel.distinctUntilChangedDemo()
+        })
     }
 }

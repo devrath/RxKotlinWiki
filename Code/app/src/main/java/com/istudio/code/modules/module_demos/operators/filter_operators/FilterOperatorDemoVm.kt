@@ -55,7 +55,7 @@ class FilterOperatorDemoVm @Inject constructor(context: Application) : AndroidVi
             onSuccess = { println("Element printed:-> $it") },
             onError = { println("Error Triggered") },
             onComplete = { println("Complete Triggered") }
-        )
+        ).addTo(subscription)
     }
 
     fun elementAtDemo() {
@@ -71,12 +71,70 @@ class FilterOperatorDemoVm @Inject constructor(context: Application) : AndroidVi
 
     /** ****************** OPERATOR: ElementAt ************************ **/
 
+    /** ****************** OPERATOR: Filter *************************** **/
+
+    // Create the observable
+    private val filterSubject = PublishSubject.create<String>()
+
+    // Create the subscriber
+    private fun subscribeFilterAt(){
+        filterSubject.filter { it==episodeII }.subscribeBy(
+            onNext = { println("Element printed:-> $it") },
+            onError = { println("Error Triggered") },
+            onComplete = { println("Complete Triggered") }
+        ).addTo(subscription)
+    }
+
+    fun filterDemo() {
+        // Subscribe the observer to the observable
+        subscribeFilterAt()
+        // Publish some elements
+        filterSubject.onNext(episodeI)
+        filterSubject.onNext(episodeII)
+        filterSubject.onNext(episodeIII)
+        // Indicate completion of stream
+        filterSubject.onComplete()
+    }
+    /** ****************** OPERATOR: Filter *************************** **/
 
 
+    /** ****************** OPERATOR: DistinctUntilChanged ************ **/
+
+    // Create the observable
+    private val distinctUntilChangedSubject = PublishSubject.create<String>()
+
+    // Create the subscriber
+    private fun subscribeDistinctUntilChanged(){
+        distinctUntilChangedSubject.distinctUntilChanged().subscribeBy(
+            onNext = { println("Element printed:-> $it") },
+            onError = { println("Error Triggered") },
+            onComplete = { println("Complete Triggered") }
+        ).addTo(subscription)
+    }
+
+    fun distinctUntilChangedDemo() {
+        // Subscribe the observer to the observable
+        subscribeDistinctUntilChanged()
+        // Publish some elements
+        distinctUntilChangedSubject.onNext(episodeI)
+        distinctUntilChangedSubject.onNext(episodeI)
+        distinctUntilChangedSubject.onNext(episodeI)
+        distinctUntilChangedSubject.onNext(episodeII)
+        distinctUntilChangedSubject.onNext(episodeII)
+        distinctUntilChangedSubject.onNext(episodeIII)
+        distinctUntilChangedSubject.onNext(episodeIII)
+        distinctUntilChangedSubject.onNext(episodeIII)
+        // Indicate completion of stream
+        distinctUntilChangedSubject.onComplete()
+
+    }
+
+    /** ****************** OPERATOR: DistinctUntilChanged ************ **/
 
 
     override fun onCleared() {
         super.onCleared()
+        subscription.clear()
     }
 
 }
